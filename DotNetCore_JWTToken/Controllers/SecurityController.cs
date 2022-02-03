@@ -15,7 +15,7 @@ namespace DotNetCore_JWTToken.Controllers
         // GET: SecurityController
         public static string GenerateToken(string username)
         {
-
+            //
             byte[] key = Convert.FromBase64String("djkgutrutrhhhhfd33333333333333hfh435435jjnnn");
             SymmetricSecurityKey securityKey = new SymmetricSecurityKey(key);
             SecurityTokenDescriptor descriptor = new SecurityTokenDescriptor
